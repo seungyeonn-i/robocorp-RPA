@@ -1,14 +1,31 @@
-# Template: Standard Robot Framework
+## Getting Started
 
-This is the simplest template to start from.
+⏬  Install rcc
 
-- Get started from a simple task template in `tasks.robot`.
-  - Uses [Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework/basics) syntax.
-- You can configure your robot `robot.yaml`.
-- You can configure dependencies in `conda.yaml`.
+> Install or Download RCC
+> 
+> 
+> ### macOS
+> 
+> Brew cask from Robocorp tap
+> 
+> 1. Install: `brew install robocorp/tools/rcc`
+> 2. Test: `rcc`
+> 
+> Upgrading: `brew upgrade rcc`
+> 
 
-## Learning materials
+Pull robot from GitHub:
 
-- [Robocorp Developer Training Courses](https://robocorp.com/docs/courses)
-- [Documentation links on Robot Framework](https://robocorp.com/docs/languages-and-frameworks/robot-framework)
-- [Example bots in Robocorp Portal](https://robocorp.com/portal)
+> rcc pull github.com/robocorp/example-google-image-search
+> 
+
+🏃 Run robot
+
+> rcc run
+> 
+
+🐣 Create your own robot from template
+
+> rcc robot initialize -t standard
+>
