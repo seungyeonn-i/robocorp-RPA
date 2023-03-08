@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230307 14:43:09.960" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230308 14:14:29.629" rpa="false" schemaversion="3">
 <suite id="s1" name="Tasks" source="/Users/jeong-seungyeon/codes/robocorp-RPA/tasks.robot">
 <test id="s1-t1" name="Valid Login" line="12">
 <kw name="Open Browser To Login Page">
@@ -7,40 +7,40 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230307 14:43:10.178" level="INFO">Opening browser 'Chrome' to base url 'https://www.aviemuah.com/member/login.html?noMemberOrder&amp;returnUrl=%2Fmyshop%2Forder%2Flist.html'.</msg>
-<status status="PASS" starttime="20230307 14:43:10.177" endtime="20230307 14:43:25.303"/>
+<msg timestamp="20230308 14:14:30.146" level="INFO">Opening browser 'Chrome' to base url 'https://www.aviemuah.com/member/login.html?noMemberOrder&amp;returnUrl=%2Fmyshop%2Forder%2Flist.html'.</msg>
+<status status="PASS" starttime="20230308 14:14:30.144" endtime="20230308 14:14:43.187"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:10.177" endtime="20230307 14:43:25.309"/>
+<status status="PASS" starttime="20230308 14:14:30.142" endtime="20230308 14:14:43.191"/>
 </kw>
 <kw name="Go to main">
 <kw name="Click Image" library="SeleniumLibrary">
 <arg>/web/upload/mundane/logo.svg</arg>
 <doc>Clicks an image identified by ``locator``.</doc>
-<msg timestamp="20230307 14:43:25.316" level="INFO">Clicking image '/web/upload/mundane/logo.svg'.</msg>
-<status status="PASS" starttime="20230307 14:43:25.313" endtime="20230307 14:43:30.104"/>
+<msg timestamp="20230308 14:14:43.198" level="INFO">Clicking image '/web/upload/mundane/logo.svg'.</msg>
+<status status="PASS" starttime="20230308 14:14:43.195" endtime="20230308 14:14:48.739"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:25.311" endtime="20230307 14:43:30.104"/>
+<status status="PASS" starttime="20230308 14:14:43.193" endtime="20230308 14:14:48.740"/>
 </kw>
 <kw name="Change Window">
 <kw name="Get Window Size" library="SeleniumLibrary">
 <var>${width}</var>
 <var>${height}</var>
 <doc>Returns current window width and height as integers.</doc>
-<msg timestamp="20230307 14:43:30.111" level="INFO">${width} = 1200</msg>
-<msg timestamp="20230307 14:43:30.112" level="INFO">${height} = 1011</msg>
-<status status="PASS" starttime="20230307 14:43:30.105" endtime="20230307 14:43:30.112"/>
+<msg timestamp="20230308 14:14:48.748" level="INFO">${width} = 1200</msg>
+<msg timestamp="20230308 14:14:48.749" level="INFO">${height} = 957</msg>
+<status status="PASS" starttime="20230308 14:14:48.742" endtime="20230308 14:14:48.749"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:30.105" endtime="20230307 14:43:30.112"/>
+<status status="PASS" starttime="20230308 14:14:48.741" endtime="20230308 14:14:48.750"/>
 </kw>
 <kw name="Open Browser To Login Page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230307 14:43:30.114" level="INFO">Opening browser 'Chrome' to base url 'https://www.aviemuah.com/member/login.html?noMemberOrder&amp;returnUrl=%2Fmyshop%2Forder%2Flist.html'.</msg>
-<status status="PASS" starttime="20230307 14:43:30.113" endtime="20230307 14:43:42.484"/>
+<msg timestamp="20230308 14:14:48.753" level="INFO">Opening browser 'Chrome' to base url 'https://www.aviemuah.com/member/login.html?noMemberOrder&amp;returnUrl=%2Fmyshop%2Forder%2Flist.html'.</msg>
+<status status="PASS" starttime="20230308 14:14:48.752" endtime="20230308 14:15:00.162"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:30.113" endtime="20230307 14:43:42.486"/>
+<status status="PASS" starttime="20230308 14:14:48.751" endtime="20230308 14:15:00.165"/>
 </kw>
 <kw name="Input Username">
 <arg>jeongsy8928</arg>
@@ -48,10 +48,10 @@
 <arg>member_id</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230307 14:43:42.491" level="INFO">Typing text 'jeongsy8928' into text field 'member_id'.</msg>
-<status status="PASS" starttime="20230307 14:43:42.489" endtime="20230307 14:43:44.880"/>
+<msg timestamp="20230308 14:15:00.173" level="INFO">Typing text 'jeongsy8928' into text field 'member_id'.</msg>
+<status status="PASS" starttime="20230308 14:15:00.170" endtime="20230308 14:15:01.242"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:42.487" endtime="20230307 14:43:44.880"/>
+<status status="PASS" starttime="20230308 14:15:00.167" endtime="20230308 14:15:01.243"/>
 </kw>
 <kw name="Input Password">
 <arg>robocorp!!</arg>
@@ -59,40 +59,40 @@
 <arg>member_passwd</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230307 14:43:44.881" level="INFO">Typing text 'robocorp!!' into text field 'member_passwd'.</msg>
-<status status="PASS" starttime="20230307 14:43:44.881" endtime="20230307 14:43:45.060"/>
+<msg timestamp="20230308 14:15:01.247" level="INFO">Typing text 'robocorp!!' into text field 'member_passwd'.</msg>
+<status status="PASS" starttime="20230308 14:15:01.246" endtime="20230308 14:15:01.388"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:44.880" endtime="20230307 14:43:45.060"/>
+<status status="PASS" starttime="20230308 14:15:01.244" endtime="20230308 14:15:01.388"/>
 </kw>
 <kw name="Submit Credentials">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>\#none</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230307 14:43:45.062" level="INFO">Clicking link '#none'.</msg>
-<status status="PASS" starttime="20230307 14:43:45.061" endtime="20230307 14:43:45.869"/>
+<msg timestamp="20230308 14:15:01.392" level="INFO">Clicking link '#none'.</msg>
+<status status="PASS" starttime="20230308 14:15:01.390" endtime="20230308 14:15:02.902"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:45.061" endtime="20230307 14:43:45.869"/>
+<status status="PASS" starttime="20230308 14:15:01.389" endtime="20230308 14:15:02.903"/>
 </kw>
 <kw name="Delete All Cookie">
 <kw name="Delete All Cookies" library="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<status status="PASS" starttime="20230307 14:43:45.870" endtime="20230307 14:43:45.906"/>
+<status status="PASS" starttime="20230308 14:15:02.906" endtime="20230308 14:15:03.972"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:45.870" endtime="20230307 14:43:45.906"/>
+<status status="PASS" starttime="20230308 14:15:02.904" endtime="20230308 14:15:03.972"/>
 </kw>
 <kw name="Welcome Page Should Be Open">
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Àvie muah</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20230307 14:43:45.914" level="INFO">Page title is 'Àvie muah'.</msg>
-<status status="PASS" starttime="20230307 14:43:45.907" endtime="20230307 14:43:45.914"/>
+<msg timestamp="20230308 14:15:03.984" level="INFO">Page title is 'Àvie muah'.</msg>
+<status status="PASS" starttime="20230308 14:15:03.974" endtime="20230308 14:15:03.984"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:45.907" endtime="20230307 14:43:45.914"/>
+<status status="PASS" starttime="20230308 14:15:03.973" endtime="20230308 14:15:03.985"/>
 </kw>
-<status status="PASS" starttime="20230307 14:43:10.176" endtime="20230307 14:43:45.916"/>
+<status status="PASS" starttime="20230308 14:14:30.140" endtime="20230308 14:15:03.986"/>
 </test>
 <doc>Simple example using SeleniumLibrary.</doc>
-<status status="PASS" starttime="20230307 14:43:09.964" endtime="20230307 14:43:45.917"/>
+<status status="PASS" starttime="20230308 14:14:29.638" endtime="20230308 14:15:03.989"/>
 </suite>
 <statistics>
 <total>
