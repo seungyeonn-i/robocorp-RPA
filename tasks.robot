@@ -1,5 +1,6 @@
 *** Settings ***
 Library           RPA.Browser.Selenium
+Library    RPA.Desktop
 
 *** Variables ***
 ${BROWSER}        Chrome
@@ -14,8 +15,9 @@ Example Test
     Log    ${title}
     Input Text    name=q    Robot Framework
     Click Element    name=btnK
-    Wait Until Element Is Visible    css=.g .rc .r a
-    ${results}=    Get Text    css=.g .rc .r a
+    # Wait For Element
+    # Wait Until Element Is Enabled    css=.g .rc .r a
+    # ${results}=    Get Text    css=.g .rc .r a
     Log Many    ${results}
     Click Element    link=Images
     Wait Until Element Is Visible    css=.rg_i
