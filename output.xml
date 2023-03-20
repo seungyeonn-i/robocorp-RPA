@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230313 15:49:37.369" rpa="false" schemaversion="3">
-<suite id="s1" name="Tasks" source="/Users/jeong-seungyeon/codes/robocorp-RPA/tasks.robot">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on darwin)" generated="20230320 14:48:34.617" rpa="false" schemaversion="3">
+<suite id="s1" name="Tasks3" source="/Users/jeong-seungyeon/codes/robocorp-RPA/tasks3.robot">
 <test id="s1-t1" name="Example Test" line="9">
 <kw name="Open Available Browser" library="RPA.Browser.Selenium">
 <arg>https://www.google.com</arg>
@@ -8,101 +8,72 @@
 <doc>Attempts to open a browser on the user's device from a set of
 supported browsers. Automatically downloads a corresponding webdriver
 if none is already installed.</doc>
-<msg timestamp="20230313 15:56:50.938" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
-<msg timestamp="20230313 15:56:58.404" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
-<msg timestamp="20230313 15:56:58.410" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
-<msg timestamp="20230313 15:56:58.411" level="INFO">Opening url 'https://www.google.com'</msg>
-<status status="PASS" starttime="20230313 15:56:50.932" endtime="20230313 15:57:06.246"/>
+<msg timestamp="20230320 14:48:35.248" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230320 14:48:41.644" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230320 14:48:41.645" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230320 14:48:41.645" level="INFO">Opening url 'https://www.google.com'</msg>
+<status status="PASS" starttime="20230320 14:48:35.245" endtime="20230320 14:48:51.321"/>
+</kw>
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>Https://www.naver.com</arg>
+<arg>${BROWSER}</arg>
+<arg>alias=naver</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20230320 14:48:51.335" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20230320 14:48:57.799" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20230320 14:48:57.801" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20230320 14:48:57.801" level="INFO">Opening url 'Https://www.naver.com'</msg>
+<status status="PASS" starttime="20230320 14:48:51.324" endtime="20230320 14:49:02.093"/>
 </kw>
 <kw name="Set Window Size" library="RPA.Browser.Selenium">
 <arg>800</arg>
 <arg>600</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20230313 15:57:06.249" endtime="20230313 15:57:06.371"/>
+<status status="PASS" starttime="20230320 14:49:02.096" endtime="20230320 14:49:02.845"/>
 </kw>
-<kw name="Get Location" library="RPA.Browser.Selenium">
-<var>${location}</var>
-<doc>Returns the current browser window URL.</doc>
-<msg timestamp="20230313 15:57:06.444" level="INFO">${location} = https://www.google.com/</msg>
-<status status="PASS" starttime="20230313 15:57:06.372" endtime="20230313 15:57:06.445"/>
+<kw name="Switch Browser" library="RPA.Browser.Selenium">
+<arg>naver</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" starttime="20230320 14:49:02.846" endtime="20230320 14:49:02.848"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${location}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230313 15:57:06.447" level="INFO">https://www.google.com/</msg>
-<status status="PASS" starttime="20230313 15:57:06.446" endtime="20230313 15:57:06.447"/>
+<kw name="Switch Window" library="RPA.Browser.Selenium">
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230320 14:49:02.849" endtime="20230320 14:49:02.868"/>
 </kw>
-<kw name="Get Title" library="RPA.Browser.Selenium">
-<var>${title}</var>
-<doc>Returns the title of the current page.</doc>
-<msg timestamp="20230313 15:57:06.454" level="INFO">${title} = Google</msg>
-<status status="PASS" starttime="20230313 15:57:06.448" endtime="20230313 15:57:06.455"/>
+<kw name="Set Window Position" library="RPA.Browser.Selenium">
+<arg>100</arg>
+<arg>200</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" starttime="20230320 14:49:02.869" endtime="20230320 14:49:03.824"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${title}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230313 15:57:06.457" level="INFO">Google</msg>
-<status status="PASS" starttime="20230313 15:57:06.456" endtime="20230313 15:57:06.458"/>
+<kw name="Set Selenium Timeout" library="RPA.Browser.Selenium">
+<arg>2</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20230320 14:49:03.836" endtime="20230320 14:49:03.857"/>
 </kw>
-<kw name="Input Text" library="RPA.Browser.Selenium">
-<arg>name=q</arg>
-<arg>Robot Framework</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230313 15:57:06.460" level="INFO">Typing text 'Robot Framework' into text field 'name=q'.</msg>
-<status status="PASS" starttime="20230313 15:57:06.458" endtime="20230313 15:57:07.662"/>
+<kw name="Set Selenium Speed" library="RPA.Browser.Selenium">
+<arg>4</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230320 14:49:03.858" endtime="20230320 14:49:03.859"/>
 </kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>name=btnK</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230313 15:57:07.665" level="INFO">Clicking element 'name=btnK'.</msg>
-<status status="PASS" starttime="20230313 15:57:07.663" endtime="20230313 15:57:16.749"/>
-</kw>
-<kw name="Log Many" library="BuiltIn">
-<arg>${results}</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<msg timestamp="20230313 15:57:16.759" level="FAIL">Variable '${results}' not found.</msg>
-<status status="FAIL" starttime="20230313 15:57:16.751" endtime="20230313 15:57:28.847"/>
-</kw>
-<kw name="Click Element" library="RPA.Browser.Selenium">
-<arg>link=Images</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230313 15:57:28.850" endtime="20230313 15:57:28.851"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="RPA.Browser.Selenium">
-<arg>css=.rg_i</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20230313 15:57:28.853" endtime="20230313 15:57:28.854"/>
-</kw>
-<kw name="Scroll Element Into View" library="RPA.Browser.Selenium">
-<arg>css=.rg_i</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="NOT RUN" starttime="20230313 15:57:28.855" endtime="20230313 15:57:28.856"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="RPA.Browser.Selenium">
-<arg>css=.rg_i</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="NOT RUN" starttime="20230313 15:57:28.857" endtime="20230313 15:57:28.858"/>
-</kw>
-<kw name="Close Browser" library="RPA.Browser.Selenium">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20230313 15:57:28.859" endtime="20230313 15:57:28.860"/>
-</kw>
-<status status="FAIL" starttime="20230313 15:56:50.925" endtime="20230313 15:57:28.862">Variable '${results}' not found.</status>
+<status status="PASS" starttime="20230320 14:48:35.244" endtime="20230320 14:49:03.861"/>
 </test>
-<status status="FAIL" starttime="20230313 15:49:37.381" endtime="20230313 15:57:28.867"/>
+<status status="PASS" starttime="20230320 14:48:34.623" endtime="20230320 14:49:03.864"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Tasks">Tasks</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks3">Tasks3</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230313 15:49:38.221" level="ERROR">Error in file '/Users/jeong-seungyeon/codes/robocorp-RPA/tasks.robot' on line 3: Importing library 'RPA.Desktop' failed: SyntaxError: invalid syntax (__init__.py, line 37)
+<msg timestamp="20230320 14:48:35.241" level="ERROR">Error in file '/Users/jeong-seungyeon/codes/robocorp-RPA/tasks3.robot' on line 3: Importing library 'RPA.Desktop' failed: SyntaxError: invalid syntax (__init__.py, line 37)
 Traceback (most recent call last):
   None
 PYTHONPATH:
