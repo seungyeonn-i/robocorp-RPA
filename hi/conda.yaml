@@ -1,0 +1,7 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9.13
+  - pip=22.1.2
+  - pip:
+    - rpaframework-windows==7.0.2 # standalone Windows library (rpaframework includes this library)

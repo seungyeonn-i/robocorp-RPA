@@ -1,9 +1,0 @@
-channels:
-- conda-forge
-dependencies:
-- python=3.9.13
-- pip=22.1.2
-- numpy=1.23.0
-- pip:
-  - rpaframework==16.0.0
-  - rpaframework-recognition==5.0.1

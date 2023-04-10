@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230410 14:55:42.241" rpa="true" schemaversion="3">
+<suite id="s1" name="Tasks" source="c:\Users\bkoho\robot\hi\tasks.robot">
+<test id="s1-t1" name="Do some calculations" line="5">
+<kw name="Windows Run" library="RPA.Windows" type="SETUP">
+<arg>calc.exe</arg>
+<tag>window</tag>
+<doc>Use Windows run window to launch application.</doc>
+<msg timestamp="20230410 14:55:43.696" level="INFO">Sending keys '{Win}r' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\3dddbd0_b1f3c24_6cd60f16\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20230410 14:55:44.281" level="INFO">Sending keys 'calc.exe' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\3dddbd0_b1f3c24_6cd60f16\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20230410 14:55:44.919" level="INFO">Sending keys '{Enter}' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\3dddbd0_b1f3c24_6cd60f16\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20230410 14:55:43.690" endtime="20230410 14:55:48.478"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>id:clearButton</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20230410 14:55:48.499" level="INFO">Getting element with locator: id:clearButton</msg>
+<msg timestamp="20230410 14:55:49.159" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000020E77052100&gt;, locator=None, name='데스크톱 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1600, top=0, bottom=900, width=1600, height=900, xcenter=800, ycenter=450)</msg>
+<msg timestamp="20230410 14:55:49.160" level="INFO">Locator 'id:clearButton' produced matcher: MatchObject(locators=[('AutomationId', 'clearButton', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20230410 14:55:49.791" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000020E77052310&gt;, locator='id:clearButton', name='지우기', automation_id='clearButton', control_type='ButtonControl', class_name='Button', left=463, right=524, top=450, bottom=485, width=61, height=35, xcenter=493, ycenter=467)</msg>
+<status status="PASS" starttime="20230410 14:55:48.488" endtime="20230410 14:55:50.373"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>keys=96+4=</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20230410 14:55:50.400" level="INFO">Sending keys '96+4=' to element &lt;module 'uiautomation' from 'c:\\ProgramData\\robocorp\\ht\\3dddbd0_b1f3c24_6cd60f16\\lib\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20230410 14:55:50.396" endtime="20230410 14:55:50.983"/>
+</kw>
+<kw name="Get Attribute" library="RPA.Windows">
+<var>${result}</var>
+<arg>id:equalButton</arg>
+<arg>Name</arg>
+<doc>Get attribute value of the element defined by the locator.</doc>
+<msg timestamp="20230410 14:55:50.995" level="INFO">Getting element with locator: id:equalButton</msg>
+<msg timestamp="20230410 14:55:51.002" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000020E77052BB0&gt;, locator=None, name='데스크톱 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1600, top=0, bottom=900, width=1600, height=900, xcenter=800, ycenter=450)</msg>
+<msg timestamp="20230410 14:55:51.005" level="INFO">Locator 'id:equalButton' produced matcher: MatchObject(locators=[('AutomationId', 'equalButton', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20230410 14:55:51.678" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000020E77052400&gt;, locator='id:equalButton', name='일치', automation_id='equalButton', control_type='ButtonControl', class_name='Button', left=526, right=586, top=675, bottom=710, width=60, height=35, xcenter=556, ycenter=692)</msg>
+<msg timestamp="20230410 14:55:51.681" level="INFO">${result} = 일치</msg>
+<status status="PASS" starttime="20230410 14:55:50.989" endtime="20230410 14:55:51.683"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230410 14:55:51.691" endtime="20230410 14:55:51.699"/>
+</kw>
+<kw name="Get Text" library="RPA.Windows">
+<var>${buttons}</var>
+<arg>id:CalculatorResults</arg>
+<tag>action</tag>
+<doc>Get text from Control element defined by the locator.</doc>
+<msg timestamp="20230410 14:55:51.715" level="INFO">Getting element with locator: id:CalculatorResults</msg>
+<msg timestamp="20230410 14:55:51.723" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x0000020E770522B0&gt;, locator=None, name='데스크톱 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1600, top=0, bottom=900, width=1600, height=900, xcenter=800, ycenter=450)</msg>
+<msg timestamp="20230410 14:55:51.724" level="INFO">Locator 'id:CalculatorResults' produced matcher: MatchObject(locators=[('AutomationId', 'CalculatorResults', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20230410 14:55:52.241" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.TextControl object at 0x0000020E77052490&gt;, locator='id:CalculatorResults', name='표시는 100', automation_id='CalculatorResults', control_type='TextControl', class_name='', left=270, right=590, top=286, bottom=333, width=320, height=47, xcenter=430, ycenter=309)</msg>
+<msg timestamp="20230410 14:55:52.244" level="INFO">${buttons} = None</msg>
+<status status="PASS" starttime="20230410 14:55:51.705" endtime="20230410 14:55:52.246"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${buttons}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230410 14:55:52.253" endtime="20230410 14:55:52.257"/>
+</kw>
+<kw name="Close Current Window" library="RPA.Windows" type="TEARDOWN">
+<tag>window</tag>
+<doc>Closes current active window or logs a warning message.</doc>
+<msg timestamp="20230410 14:55:52.263" level="WARN">There is no active window!</msg>
+<status status="PASS" starttime="20230410 14:55:52.260" endtime="20230410 14:55:52.270"/>
+</kw>
+<status status="PASS" starttime="20230410 14:55:43.679" endtime="20230410 14:55:52.272"/>
+</test>
+<status status="PASS" starttime="20230410 14:55:42.276" endtime="20230410 14:55:52.285"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tasks">Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230410 14:55:52.263" level="WARN">There is no active window!</msg>
+</errors>
+</robot>
