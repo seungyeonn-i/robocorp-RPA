@@ -1,8 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 
-*** Variables ***
-${BROWSER}        safari
+e
 
 *** Test Cases ***
 Click Element At Coordinates Test
